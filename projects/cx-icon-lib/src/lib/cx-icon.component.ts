@@ -1,10 +1,10 @@
 import {ChangeDetectionStrategy, Component, ElementRef, Inject, Input, Optional} from '@angular/core';
-import {cxIcon} from "../../../icons";
-import {CxIconRegistryService} from "../cx-icon-registry.service";
+import {CxIconRegistryService} from "./cx-icon-registry.service";
 import {DOCUMENT} from "@angular/common";
+import {cxIcon} from "./cx-icon.model";
 
 @Component({
-  selector: 'lib-cx-icon',
+  selector: 'cx-icon',
   template: `
     <ng-content></ng-content>
   `,

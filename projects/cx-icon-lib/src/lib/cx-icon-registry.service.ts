@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {CxIcon} from "../../icons";
+import {CxIcon} from "./cx-icon.model";
 
 @Injectable({
   providedIn: 'root'

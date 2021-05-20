@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CxIconComponent } from './cx-icon/cx-icon.component';
+import { CxIconComponent } from './cx-icon.component';
 
 
 
