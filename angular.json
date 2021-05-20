@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "cx-icon-lib": {
+      "projectType": "library",
+      "root": "projects/cx-icon-lib",
+      "sourceRoot": "projects/cx-icon-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/cx-icon-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/cx-icon-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/cx-icon-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/cx-icon-lib/src/test.ts",
+            "tsConfig": "projects/cx-icon-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/cx-icon-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "cx-icon-lib"
 }
