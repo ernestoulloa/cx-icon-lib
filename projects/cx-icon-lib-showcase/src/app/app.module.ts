@@ -5,12 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CxIconLibModule} from "../../../cx-icon-lib/src/lib/cx-icon-lib.module";
 import {CxIconRegistryService} from "../../../cx-icon-lib/src/lib/cx-icon-registry.service";
-import {
-  completeIconSet,
-  cxIconAddChart,
-  cxIconComputerEngineering,
-  cxIconMechanicalEngineering
-} from "../../../cx-icon-lib/icons";
+import {completeIconSet} from "../../../cx-icon-lib/icons";
 
 @NgModule({
   declarations: [
